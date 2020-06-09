@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* ----------------logo-------------- */
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo>a{
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+}
+.logo>a>span{
+    color: 407ad0;
+}
+.logo>button{
+    display: block;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 30px;
+}
+.menu a{
+    display: block;
+    color: #000;
+    padding: 15px;
+    font-weight: bolder;
+    
+}
+.menu{
+    display: none;
+}
+/* -------------------------------------- */
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url('../images/beach-1852945_1920.jpg');
+    background-position: center;
+    background-size: cover;
+
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner h1{
+    color: blue;
+    font-size: 10vw;
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+}
+.banner p{
+    color: black;
+}
+.sub_title{
+    color:blue;
+    font-size: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+.contact>.text{
+    text-align: center;
+}
+.contact ul{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+.contact .icon{
+    background-color: #ffe17e;
+
+    font-size: 40px;
+    border-radius: 50%;
+
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+
+    margin-right: 20px;
+}
+
+}
+
+}
+/* 태블릿 사이즈 */
+@media all and (min-width:768px)
+{
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo>button{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* pc 사이즈 */
+@media all and (min-width:1024px)
+{
+    .header{
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
